@@ -20,10 +20,10 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 </div>
 
 ---
-style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/computer-programmer.jpg); background-size: cover; background-position: center;"
+style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/computer-programmer.jpg); background-size: cover; background-position: center;"
 ---
 
-# 👨‍💻 **關於我 - 簡介**
+# 👨‍💻 **Profile - 簡介**
 
 - # 資深軟體工程師
 - # 擅長 **C# 與 .NET 框架**
@@ -37,15 +37,15 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 ## layout: two-cols # 左右兩欄佈局
 ---
 
-# 🎓 **學歷背景**
+# 🎓 **Education - 學歷背景**
 
 <div class="space-y-8"> <!-- 為每個學歷條目之間提供垂直間距 -->
 
   <!-- 台灣科技大學 -->
   <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
     <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
-      <h3 class="text-xl font-semibold">台灣科技大學</h3>
-      <p><h4>電機所碩士畢業</h4></p>
+      <h3 class="text-xl font-semibold">台灣科技大學</h3><br/>
+      <h4 class="text-xl font-semibold">電機所碩士畢業</h4>
       <p class="text-sm text-gray-600">2008/9 ~ 2010/7</p>
     </div>
     <img src="/images/ntust.jpg" alt="台灣科技大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片，ml-6 左邊距，flex-shrink-0 防止圖片被壓縮 -->
@@ -54,98 +54,104 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
   <!-- 私立淡江大學 -->
   <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
     <div class="flex-grow">
-    <h3 class="text-xl font-semibold">私立淡江大學</h3>
-    <p><h4>電機系學士畢業</h4></p>
+    <h3 class="text-xl font-semibold">私立淡江大學</h3><br/>
+    <h4 class="text-xl font-semibold">電機系學士畢業</h4>
     <p class="text-sm text-gray-600">2003/9 ~ 2008/6</p>
     </div>
     <img src="/images/tku.jpg" alt="淡江大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片 -->
   </div>
 </div>
 ---
-layout: two-cols-header
+layout: default
 ---
 
-<style>
-/* 這個 class 名稱可能需要根據實際情況調整 */
-.slidev-layout .cols > .slidev-layout-left, /* 針對 Slidev 預設的兩欄佈局 */
-.slidev-layout-left { /* 或者其他佈局中 ::left:: 可能的 class */
-  padding-left: 0.5rem !important; /* 調整為您需要的值，例如 0, 8px, 1rem 等 */
-}
-</style>
+# 💼 **Work Experience - 工作經歷**
 
-# 💼 **工作經歷**
 
-::left:: 
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div>
+    <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造 <span class="text-sm">2023/09 ~ 至今</span>
+    <ul class="list-disc list-inside ml-4">
+      <li>從無到有，建置系統架構(MES系統)</li>
+      <li>採用微服務架構進行系統設計與開發</li>
+    </ul>
+  </div>
 
-## <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造 <span class="text-sm">2023/09 ~ 至今</span>
-- 整合方案的MES系統開發，從無到有建置系統架構
-- 採用微服務架構進行系統設計與開發
+  <div>
+    <mdi-PencilRuler class="inline-block text-gray-500"/> 創創數位科技 <span class="text-sm">2023/04 ~ 2023/08 (5m)</span>
+    <ul class="list-disc list-inside ml-4">
+      <li>負責政府專案的產品維護與新功能開發</li>
+    </ul>
+  </div>
 
-## <mdi-PencilRuler class="inline-block text-gray-500"/> 創創數位科技 <span class="text-sm">2023/04 ~ 2023/08 (5m)</span>
-- 負責政府專案的產品維護與新功能開發
+  <div>
+    <mdi-quadcopter class="inline-block text-red-500"/> 經緯航太科技 <span class="text-sm">2018/11 ~ 2023/03 (4y4m)</span>
+    <ul class="list-disc list-inside ml-4">
+      <li>台南市政府工務局、都發局...專案開發與維護</li>
+      <li>導入無人機智慧農噴平台</li>
+    </ul>
+  </div>
 
-## <mdi-quadcopter class="inline-block text-red-500"/> 經緯航太科技 <span class="text-sm">2018/11 ~ 2023/03 (4y4m)</span>
-- 台南市政府工務局、都發局...專案開發與維護
-- 導入無人機智慧農噴平台
+  <div>
+    <mdi-cart class="inline-block text-orange-500"/> 燦坤先端智能 <span class="text-sm">2017/05 ~ 2018/09 (1y5m)</span>
+    <ul class="list-disc list-inside ml-4">
+      <li>維護 RD 進度開發系統</li>
+      <li>開發內網(請款、訂餐、用印、排程)</li>
+    </ul>
+  </div>
 
-::right::
-
-<br/>
-<br/>
-
-## <mdi-cart class="inline-block text-orange-500"/> 燦坤先端智能 <span class="text-sm">2017/05 ~ 2018/09 (1y5m)</span>
-- 維護 RD 進度開發系統
-- 開發內網(請款、訂餐、用印、排程)
-- 開發對外官網
-
-## <mdi-office-building class="inline-block text-gray-500"/> 松凌科技 <span class="text-sm">`2011/10 ~ 2017/04 (5y7m)`</span>
-- 開發壽險程式後端設計、撰寫與維護
-- 舊系統資料轉換新系統
+  <div>
+    <mdi-office-building class="inline-block text-gray-500"/> 松凌科技 <span class="text-sm">2011/10 ~ 2017/04 (5y7m)</span>
+    <ul class="list-disc list-inside ml-4">
+      <li>開發壽險程式後端設計、撰寫與維護</li>
+      <li>舊系統資料轉換新系統</li>
+    </ul>
+  </div>
+</div>
 
 ---
 ## layout: default
 ---
 
-# 🛠️ **專業技能**
+# 🛠️ **Skill - 專業技能**
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div>
+    <h3 class="text-xl font-semibold mt-2 mb-1"><ph-code-bold class="inline-block"/> 程式設計</h3>
+    <ul class="list-disc list-inside ml-4">
+      <li>ASP.NET Core, ASP.NET, ASP, C#</li>
+      <li>Java, Spring, Hibernate</li>
+    </ul>
+  </div>
 
-<div>
-  <h3 class="text-xl font-semibold mt-2 mb-1"><ph-code-bold class="inline-block"/> 程式設計</h3>
-  <ul class="list-disc list-inside ml-4">
-<li>ASP.NET Core, ASP.NET, ASP, C#</li>
-<li>Java, Spring, Hibernate</li>
-  </ul>
-</div>
+  <div>
+    <h3 class="text-xl font-semibold mt-2 mb-1"><ph-database-bold class="inline-block"/> 資料庫設計</h3>
+    <ul class="list-disc list-inside ml-4">
+      <li>MS SQL, MySQL, PostgreSQL, PL/SQL</li>
+    </ul>
+  </div>
 
-<div>
-  <h3 class="text-xl font-semibold mt-2 mb-1"><ph-database-bold class="inline-block"/> 資料庫設計</h3>
-  <ul class="list-disc list-inside ml-4">
-<li>MS SQL, MySQL, PostgreSQL, PL/SQL</li>
-  </ul>
-</div>
+  <div>
+    <h3 class="text-xl font-semibold mt-2 mb-1"><ph-browser-bold class="inline-block"/> 網頁技術</h3>
+    <ul class="list-disc list-inside ml-4">
+      <li>Vue.js, Vite, node.js, npm, RESTful API</li>
+      <li>jQuery, AJAX, Bootstrap, JavaScript</li>
+    </ul>
+  </div>
 
-<div>
-  <h3 class="text-xl font-semibold mt-2 mb-1"><ph-browser-bold class="inline-block"/> 網頁技術</h3>
-  <ul class="list-disc list-inside ml-4">
-<li>Vue.js, Vite, node.js, npm, RESTful API</li>
-<li>jQuery, AJAX, Bootstrap, JavaScript</li>
-  </ul>
-</div>
+  <div>
+    <h3 class="text-xl font-semibold mt-2 mb-1"><ph-git-branch-bold class="inline-block"/> 版本控制</h3>
+    <ul class="list-disc list-inside ml-4">
+      <li>Git, SVN, TFS</li>
+    </ul>
+  </div>
 
-<div>
-  <h3 class="text-xl font-semibold mt-2 mb-1"><ph-git-branch-bold class="inline-block"/> 版本控制</h3>
-  <ul class="list-disc list-inside ml-4">
-<li>Git, SVN, TFS</li>
-  </ul>
-</div>
-
-<div>
-  <h3 class="text-xl font-semibold mt-2 mb-1"><ph-brain-bold class="inline-block"/> 人工智慧 (AI)</h3>
-  <ul class="list-disc list-inside ml-4">
-    <li> GitHub Copilot 輔助，提升約 10% 的開發速度</li>
-  </ul>
-</div>
+  <div>
+    <h3 class="text-xl font-semibold mt-2 mb-1"><ph-brain-bold class="inline-block"/> 人工智慧 (AI)</h3>
+    <ul class="list-disc list-inside ml-4">
+      <li> GitHub Copilot 輔助，提升約 10% 的開發速度</li>
+    </ul>
+  </div>
 
 </div>
 
@@ -211,8 +217,11 @@ class: text-center
 ## layout: default
 ---
 
-# 💡 **Side Project - 個人專案**
+# 💡 **Side Project - 個人小專案**  
+<br/>
 
-[每期帳單](https://hmlu36.github.io/vitepress/Wedding/%E5%B8%B3%E5%96%AE.html)  
-[讀經小幫手](https://hmlu36.github.io/vite-bible/)  
-假日騎士 ![](/images/bikeHelper.png)
+[每期帳單](https://hmlu36.github.io/vitepress/Wedding/%E5%B8%B3%E5%96%AE.html)    
+
+[讀經小幫手](https://hmlu36.github.io/vite-bible/)    
+
+假日騎士LineBot ![](/images/bikeHelper.png)
