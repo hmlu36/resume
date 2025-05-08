@@ -6,7 +6,7 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 
 <div class="flex items-center justify-center p-4 md:p-8 h-full"> <!-- 新增 h-full 使其填滿整個投影片高度 -->
   <div class="mr-6 md:mr-10 flex-shrink-0">
-    <div class="p-2 bg-gradient-to-r from-gray-100 to-white-400 rounded-full inline-block">
+    <div class="p-2 bg-gradient-to-r from-gray-100 to-gray-500 rounded-full inline-block">
     <!-- 確保圖片路徑正確，Slidev 中 public 資料夾下的資源可以直接用 /images/profile.png 引用 -->
     <img src="/images/profile.png" alt="個人照片" class="w-32 md:w-40 h-auto rounded-full shadow-lg" /> <!-- 稍微調整 md 尺寸 -->
     </div>
@@ -20,7 +20,7 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 </div>
 
 ---
-style: 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/computer-programmer.jpg); background-size: cover; background-position: center;'
+style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/computer-programmer.jpg); background-size: cover; background-position: center;"
 ---
 
 # 👨‍💻 **關於我 - 簡介**
@@ -37,7 +37,7 @@ style: 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 ## layout: two-cols # 左右兩欄佈局
 ---
 
-# 🎓 學歷背景
+# 🎓 **學歷背景**
 
 <div class="space-y-8"> <!-- 為每個學歷條目之間提供垂直間距 -->
 
@@ -45,7 +45,7 @@ style: 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
   <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
     <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
       <h3 class="text-xl font-semibold">台灣科技大學</h3>
-      <p>電機所碩士畢業</p>
+      <p><h4>電機所碩士畢業</h4></p>
       <p class="text-sm text-gray-600">2008/9 ~ 2010/7</p>
     </div>
     <img src="/images/ntust.jpg" alt="台灣科技大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片，ml-6 左邊距，flex-shrink-0 防止圖片被壓縮 -->
@@ -55,26 +55,34 @@ style: 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
   <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
     <div class="flex-grow">
     <h3 class="text-xl font-semibold">私立淡江大學</h3>
-    <p>電機系學士畢業</p>
+    <p><h4>電機系學士畢業</h4></p>
     <p class="text-sm text-gray-600">2003/9 ~ 2008/6</p>
     </div>
     <img src="/images/tku.jpg" alt="淡江大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片 -->
   </div>
 </div>
-
 ---
 layout: two-cols-header
 ---
 
-# 💼 工作經歷
+<style>
+/* 這個 class 名稱可能需要根據實際情況調整 */
+.slidev-layout .cols > .slidev-layout-left, /* 針對 Slidev 預設的兩欄佈局 */
+.slidev-layout-left { /* 或者其他佈局中 ::left:: 可能的 class */
+  padding-left: 0.5rem !important; /* 調整為您需要的值，例如 0, 8px, 1rem 等 */
+}
+</style>
 
-::left::
+# 💼 **工作經歷**
+
+::left:: 
 
 ## <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造 <span class="text-sm">2023/09 ~ 至今</span>
-- MES 系統開發與維護，串接硬體資訊
+- 整合方案的MES系統開發，從無到有建置系統架構
+- 採用微服務架構進行系統設計與開發
 
 ## <mdi-PencilRuler class="inline-block text-gray-500"/> 創創數位科技 <span class="text-sm">2023/04 ~ 2023/08 (5m)</span>
-- cc-work v3 後台管理平台開發
+- 負責政府專案的產品維護與新功能開發
 
 ## <mdi-quadcopter class="inline-block text-red-500"/> 經緯航太科技 <span class="text-sm">2018/11 ~ 2023/03 (4y4m)</span>
 - 台南市政府工務局、都發局...專案開發與維護
@@ -98,7 +106,7 @@ layout: two-cols-header
 ## layout: default
 ---
 
-# 🛠️ 專業技能
+# 🛠️ **專業技能**
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
@@ -135,62 +143,18 @@ layout: two-cols-header
 <div>
   <h3 class="text-xl font-semibold mt-2 mb-1"><ph-brain-bold class="inline-block"/> 人工智慧 (AI)</h3>
   <ul class="list-disc list-inside ml-4">
-    <li>深度學習框架：TensorFlow, PyTorch</li>
-    <li>自然語言處理 (NLP)：BERT, GPT</li>
-    <li>機器學習：Scikit-learn, XGBoost</li>
-    <li>電腦視覺：OpenCV, YOLO</li>
+    <li> GitHub Copilot 輔助，提升約 10% 的開發速度</li>
   </ul>
 </div>
 
 </div>
 
 ---
-## layout: two-cols-header
----
-
-# 🚀 專案經歷
-
-::left::
-
-### <mdi-office-building class="inline-block"/> 松凌科技
-
-`2011.10 ~ 2017.04`
-
-- **[富邦產物保險-新種險]** 舊系統資料轉換
-
-### <mdi-cart class="inline-block"/> 燦坤先端智能
-
-`2017.05 ~ 2018.09`
-
-- 維護 RD 進度開發系統
-- 先端內網(請款、訂餐、用印、排程)
-
-::right::
-
-### <mdi-quadcopter class="inline-block"/> 經緯航太
-
-`2018.11 ~ 2023.03`
-
-- 臺南市道路挖掘系統
-- 臺南市政府都市發展局維護
-- 智慧農噴平台
-
-### <logos-microsoft-icon class="inline-block"/> 創創數位科技
-
-`2023.04 ~ now`
-
-- 財團法人原住民族文化事業基金會
-- 財團法人原住民族語言研究發展基金會
-- 國立教育廣播電臺
-- 臺北市政府消防局
-- 黑彩人力
-
----
-layout: center
+layout: default
 class: text-center
 ---
 
-# 📜 Certificate - 專業認證
+# 📜 **Certificate - 專業認證**  
 
 <br/>
 <br/>
@@ -218,7 +182,7 @@ class: text-center
 ## layout: default
 ---
 
-# ✨ Personality - 人格特質
+# ✨ **Personality - 人格特質**
 
 <div class="space-y-1 mt-1">
   <div class="p-0.3 border-l-4 border-blue-300 bg-blue-800 text-white">
@@ -247,4 +211,8 @@ class: text-center
 ## layout: default
 ---
 
-# 💡 Side Project - 個人專案
+# 💡 **Side Project - 個人專案**
+
+[每期帳單](https://hmlu36.github.io/vitepress/Wedding/%E5%B8%B3%E5%96%AE.html)  
+[讀經小幫手](https://hmlu36.github.io/vite-bible/)  
+假日騎士 ![](/images/bikeHelper.png)
