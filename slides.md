@@ -20,17 +20,17 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 </div>
 
 ---
-## style: 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/computer-programmer.jpg); background-size: cover; background-position: center;'
+style: 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/computer-programmer.jpg); background-size: cover; background-position: center;'
 ---
 
 # 👨‍💻 **關於我 - 簡介**
 
-- ## 資深軟體工程師
-- ## 擅長 **C# 與 .NET 框架**
-- ## 精通 **多種資料庫操作、設計與優化** (含 MS-SQL, MySQL)
-- ## 掌握 **HTML5, CSS, JavaScript/jQuery** 等前端技術
-- ## 注重**團隊合作**與**高效溝通**
-- ## 樂於**學習及應用新技術**
+- # 資深軟體工程師
+- # 擅長 **C# 與 .NET 框架**
+- # 精通 **多種資料庫(MS-SQL, MySQL...)** 
+- # 掌握 **前端技術(HTML5, CSS, JavaScript/jQuery)** 
+- # 注重 **團隊合作**與**高效溝通**
+- # 樂於 **學習及應用新技術**
 
 
 ---
@@ -63,27 +63,20 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 </div>
 
 ---
-## layout: two-cols # 左右兩欄佈局
+layout: two-cols-header
 ---
 
 # 💼 工作經歷
 
-## <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造
+::left::
 
-`2023/04 ~ 至今`
+## <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造 <span class="text-sm">2023/09 ~ 至今</span>
+- MES 系統開發與維護，串接硬體資訊
 
+## <mdi-PencilRuler class="inline-block text-gray-500"/> 創創數位科技 <span class="text-sm">2023/04 ~ 2023/08 (5m)</span>
 - cc-work v3 後台管理平台開發
 
-## <mdi-PencilRuler class="inline-block text-gray-500"/> 創創數位科技
-
-`2023/04 ~ 2023/08 (5m)`
-
-- cc-work v3 後台管理平台開發
-
-## <mdi-quadcopter class="inline-block text-red-500"/> 經緯航太科技
-
-`2018/11 ~ 2023/03 (4y4m)`
-
+## <mdi-quadcopter class="inline-block text-red-500"/> 經緯航太科技 <span class="text-sm">2018/11 ~ 2023/03 (4y4m)</span>
 - 台南市政府工務局、都發局...專案開發與維護
 - 導入無人機智慧農噴平台
 
@@ -92,18 +85,12 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 <br/>
 <br/>
 
-## <mdi-cart class="inline-block text-orange-500"/> 燦坤先端智能
-
-`2017/05 ~ 2018/09 (1y5m)`
-
+## <mdi-cart class="inline-block text-orange-500"/> 燦坤先端智能 <span class="text-sm">2017/05 ~ 2018/09 (1y5m)</span>
 - 維護 RD 進度開發系統
 - 開發內網(請款、訂餐、用印、排程)
 - 開發對外官網
 
-## <mdi-office-building class="inline-block text-gray-500"/> 松凌科技
-
-`2011/10 ~ 2017/04 (5y7m)`
-
+## <mdi-office-building class="inline-block text-gray-500"/> 松凌科技 <span class="text-sm">`2011/10 ~ 2017/04 (5y7m)`</span>
 - 開發壽險程式後端設計、撰寫與維護
 - 舊系統資料轉換新系統
 
@@ -204,6 +191,9 @@ class: text-center
 ---
 
 # 📜 Certificate - 專業認證
+
+<br/>
+<br/>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
   <div class="p-4 border rounded-lg shadow-md">
