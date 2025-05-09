@@ -25,7 +25,6 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 
 # 👨‍💻 **Profile - 簡介**
 
-- # 資深軟體工程師
 - # 擅長 **C# 與 .NET 框架**
 - # 精通 **多種資料庫(MS-SQL, MySQL...)** 
 - # 掌握 **前端技術(HTML5, CSS, JavaScript/jQuery)** 
