@@ -41,6 +41,16 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 
 <div class="space-y-8"> <!-- 為每個學歷條目之間提供垂直間距 -->
 
+  <!-- 私立淡江大學 -->
+  <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
+    <div class="flex-grow">
+    <h3 class="text-xl font-semibold">私立淡江大學</h3><br/>
+    <h4 class="text-xl font-semibold">電機系學士畢業</h4>
+    <p class="text-sm text-gray-600">2003/9 ~ 2008/6</p>
+    </div>
+    <img src="/images/tku.jpg" alt="淡江大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片 -->
+  </div>
+  
   <!-- 台灣科技大學 -->
   <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
     <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
@@ -51,15 +61,6 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
     <img src="/images/ntust.jpg" alt="台灣科技大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片，ml-6 左邊距，flex-shrink-0 防止圖片被壓縮 -->
   </div>
 
-  <!-- 私立淡江大學 -->
-  <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
-    <div class="flex-grow">
-    <h3 class="text-xl font-semibold">私立淡江大學</h3><br/>
-    <h4 class="text-xl font-semibold">電機系學士畢業</h4>
-    <p class="text-sm text-gray-600">2003/9 ~ 2008/6</p>
-    </div>
-    <img src="/images/tku.jpg" alt="淡江大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片 -->
-  </div>
 </div>
 ---
 layout: default
@@ -69,11 +70,12 @@ layout: default
 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+ 
   <div>
-    <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造 <span class="text-sm">2023/09 ~ 至今</span>
+    <mdi-office-building class="inline-block text-gray-500"/> 松凌科技 <span class="text-sm">2011/10 ~ 2017/04 (5y7m)</span>
     <ul class="list-disc list-inside ml-4">
-      <li>從無到有，建置系統架構(MES系統)</li>
-      <li>採用微服務架構進行系統設計與開發</li>
+      <li>開發壽險程式後端設計、撰寫與維護</li>
+      <li>舊系統資料轉換新系統</li>
     </ul>
   </div>
 
@@ -81,6 +83,21 @@ layout: default
     <mdi-PencilRuler class="inline-block text-gray-500"/> 創創數位科技 <span class="text-sm">2023/04 ~ 2023/08 (5m)</span>
     <ul class="list-disc list-inside ml-4">
       <li>負責政府專案的產品維護與新功能開發</li>
+    </ul>
+  </div>
+  <div>
+    <mdi-cart class="inline-block text-orange-500"/> 燦坤先端智能 <span class="text-sm">2017/05 ~ 2018/09 (1y5m)</span>
+    <ul class="list-disc list-inside ml-4">
+      <li>維護 RD 進度開發系統</li>
+      <li>開發內網(請款、訂餐、用印、排程)</li>
+    </ul>
+  </div>
+  
+  <div>
+    <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造 <span class="text-sm">2023/09 ~ 至今</span>
+    <ul class="list-disc list-inside ml-4">
+      <li>從無到有，建置系統架構(MES系統)</li>
+      <li>採用微服務架構進行系統設計與開發</li>
     </ul>
   </div>
 
@@ -92,21 +109,6 @@ layout: default
     </ul>
   </div>
 
-  <div>
-    <mdi-cart class="inline-block text-orange-500"/> 燦坤先端智能 <span class="text-sm">2017/05 ~ 2018/09 (1y5m)</span>
-    <ul class="list-disc list-inside ml-4">
-      <li>維護 RD 進度開發系統</li>
-      <li>開發內網(請款、訂餐、用印、排程)</li>
-    </ul>
-  </div>
-
-  <div>
-    <mdi-office-building class="inline-block text-gray-500"/> 松凌科技 <span class="text-sm">2011/10 ~ 2017/04 (5y7m)</span>
-    <ul class="list-disc list-inside ml-4">
-      <li>開發壽險程式後端設計、撰寫與維護</li>
-      <li>舊系統資料轉換新系統</li>
-    </ul>
-  </div>
 </div>
 
 ---
