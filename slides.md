@@ -15,7 +15,7 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
     <h1 class="text-4xl md:text-5xl font-bold">自我介紹</h1>
     <p class="text-4xl md:text-4xl mt-1 md:mt-2 font-bold">盧泓民 Joshua Lu</p>
     <!-- 建議在這裡加入應徵職位 -->
-    <p class="text-2xl md:text-3xl mt-2 text-gray-700">應徵職位： 網頁工程師【AI數位轉型部】</p>
+    <p class="text-2xl md:text-3xl mt-2 text-gray-400">應徵職位： 資訊應用開發工程師</p>
   </div>
 </div>
 
@@ -26,43 +26,56 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 # 👨‍💻 **Profile - 簡介**
 
 - # 擅長 **C# 與 .NET 框架**
-- # 精通 **多種資料庫(MS-SQL, MySQL...)** 
-- # 掌握 **前端技術(HTML5, CSS, JavaScript/jQuery)** 
+- # 串接 **多種資料庫(SQL, NoSQL)** 
+- # 掌握 **前端技術(HTML5, CSS, Vue)** 
 - # 注重 **團隊合作**與**高效溝通**
-- # 樂於 **學習及應用新技術**
+- # 樂於 **學習**及**應用新技術**
 
 
 ---
-## layout: two-cols # 左右兩欄佈局
+layout: default
+style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/education.jpg); background-size: cover; background-position: center;"
 ---
+
+<style>
+.rounded-full {
+  border-radius: 50%;
+}
+</style>
 
 # 🎓 **Education - 學歷背景**
 
-<div class="space-y-8"> <!-- 為每個學歷條目之間提供垂直間距 -->
-
-  <!-- 私立淡江大學 -->
-  <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
-    <div class="flex-grow">
-    <h3 class="text-xl font-semibold">私立淡江大學</h3><br/>
-    <h4 class="text-xl font-semibold">電機系學士畢業</h4>
-    <p class="text-sm text-gray-600">2003/9 ~ 2008/6</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+  <div class="p-4 shadow-md text-center">
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <img src="/images/tku.jpg" alt="淡江大學校徽" class="h-24 w-24 object-contain mr-4 rounded-full"> 
     </div>
-    <img src="/images/tku.jpg" alt="淡江大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片 -->
+    <br/>
+    <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
+      <h3 class="text-xl font-semibold">私立淡江大學</h3>
+      <h4 class="text-xl font-semibold">電機系學士畢業</h4>
+      <p class="text-sm text-gray-400">2003/9 ~ 2008/6</p>
+    </div>
   </div>
   
   <!-- 台灣科技大學 -->
-  <div class="flex items-center"> <!-- 使用 Flexbox 進行佈局 -->
-    <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
-      <h3 class="text-xl font-semibold">台灣科技大學</h3><br/>
-      <h4 class="text-xl font-semibold">電機所碩士畢業</h4>
-      <p class="text-sm text-gray-600">2008/9 ~ 2010/7</p>
+  <div class="p-4 shadow-md text-center">
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <img src="/images/ntust.jpg" alt="台灣科技大學校徽" class="h-24 w-24 object-contain mr-4 rounded-full">
     </div>
-    <img src="/images/ntust.jpg" alt="台灣科技大學校徽" class="h-24 w-24 object-contain ml-6 flex-shrink-0"> <!-- 校徽圖片，ml-6 左邊距，flex-shrink-0 防止圖片被壓縮 -->
+    <br/>
+    <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
+      <h3 class="text-xl font-semibold">台灣科技大學</h3>
+      <h4 class="text-xl font-semibold">電機所碩士畢業</h4>
+      <p class="text-sm text-gray-400">2008/9 ~ 2010/7</p>
+    </div>
   </div>
 
 </div>
+
 ---
 layout: default
+style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/workExperience.jpg); background-size: cover; background-position: center;"
 ---
 
 # 💼 **Work Experience - 工作經歷**
@@ -71,7 +84,7 @@ layout: default
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
  
   <div>
-    <mdi-office-building class="inline-block text-gray-500"/> 松凌科技 <span class="text-sm">2011/10 ~ 2017/04 (5y7m)</span>
+    <mdi-office-building class="inline-block text-gray-500"/> <span class="text-2xl">松凌科技</span> <span class="text-sm">2011/10 ~ 2017/04 (5y7m)</span>
     <ul class="list-disc list-inside ml-4">
       <li>開發壽險程式後端設計、撰寫與維護</li>
       <li>舊系統資料轉換新系統</li>
@@ -79,13 +92,14 @@ layout: default
   </div>
 
   <div>
-    <mdi-PencilRuler class="inline-block text-gray-500"/> 創創數位科技 <span class="text-sm">2023/04 ~ 2023/08 (5m)</span>
+    <mdi-PencilRuler class="inline-block text-xl text-gray-500"/> <span class="text-2xl">創創數位科技</span> <span class="text-sm">2023/04 ~ 2023/08 (5m)</span>
     <ul class="list-disc list-inside ml-4">
       <li>負責政府專案的產品維護與新功能開發</li>
+      <li>快速上手，優化與調整確保系統穩定運行</li>
     </ul>
   </div>
   <div>
-    <mdi-cart class="inline-block text-orange-500"/> 燦坤先端智能 <span class="text-sm">2017/05 ~ 2018/09 (1y5m)</span>
+    <mdi-cart class="inline-block text-xl text-orange-500"/> <span class="text-2xl">燦坤先端智能</span> <span class="text-sm">2017/05 ~ 2018/09 (1y5m)</span>
     <ul class="list-disc list-inside ml-4">
       <li>維護 RD 進度開發系統</li>
       <li>開發內網(請款、訂餐、用印、排程)</li>
@@ -93,7 +107,7 @@ layout: default
   </div>
   
   <div>
-    <mdi-Factory class="inline-block text-gray-500"/> 鞍泰智造 <span class="text-sm">2023/09 ~ 至今</span>
+    <mdi-Factory class="inline-block text-xl text-gray-500"/> <span class="text-2xl">鞍泰智造</span> <span class="text-sm">2023/09 ~ 至今</span>
     <ul class="list-disc list-inside ml-4">
       <li>從無到有，建置系統架構(MES系統)</li>
       <li>採用微服務架構進行系統設計與開發</li>
@@ -101,7 +115,7 @@ layout: default
   </div>
 
   <div>
-    <mdi-quadcopter class="inline-block text-red-500"/> 經緯航太科技 <span class="text-sm">2018/11 ~ 2023/03 (4y4m)</span>
+    <mdi-quadcopter class="inline-block text-xl text-red-500"/> <span class="text-2xl">經緯航太科技</span> <span class="text-sm">2018/11 ~ 2023/03 (4y4m)</span>
     <ul class="list-disc list-inside ml-4">
       <li>台南市政府工務局、都發局...專案開發與維護</li>
       <li>導入無人機智慧農噴平台</li>
@@ -111,7 +125,8 @@ layout: default
 </div>
 
 ---
-## layout: default
+layout: default
+style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/skill.jpg); background-size: cover; background-position: center;"
 ---
 
 # 🛠️ **Skill - 專業技能**
@@ -129,6 +144,7 @@ layout: default
     <h3 class="text-xl font-semibold mt-2 mb-1"><ph-database-bold class="inline-block"/> 資料庫設計</h3>
     <ul class="list-disc list-inside ml-4">
       <li>MS SQL, MySQL, PostgreSQL, PL/SQL</li>
+      <li>Redis, Firebase</li>
     </ul>
   </div>
 
@@ -159,6 +175,7 @@ layout: default
 ---
 layout: default
 class: text-center
+style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/certificate.jpg); background-size: cover; background-position: center;"
 ---
 
 # 📜 **Certificate - 專業認證**  
@@ -186,7 +203,7 @@ class: text-center
 </div>
 
 ---
-## layout: default
+layout: default
 ---
 
 # ✨ **Personality - 人格特質**
@@ -215,7 +232,8 @@ class: text-center
 </div>
 
 ---
-## layout: default
+layout: default
+style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/demo.jpg); background-size: cover; background-position: center;"
 ---
 
 # 💡 **Side Project - 個人小專案**  
@@ -226,3 +244,27 @@ class: text-center
 [讀經小幫手](https://hmlu36.github.io/vite-bible/)    
 
 假日騎士LineBot ![](/images/bikeHelper.png)
+
+
+---
+layout: default
+---
+
+Q&A:   
+
+你在C#一個Web應用程式的後端開發，你會用甚麼樣的Design Pattern?  
+商業邏輯層與資料庫連結層你會怎麼分?  
+是否能獨力完成Web應用程式的CRUD?  
+你用甚麼方式連結關聯式資料庫? (以MS-SQL為例)  
+你用甚麼方式連結NoSQL資料庫? (以MongoDB為例)  
+在開發應用程式的時候，你會如何製作帳號驗證的架構? (必需要考慮整合第三方驗證。)  
+驗證與授權差異在哪裡?  
+Cookie 與   Token 的腳色分別為何?
+你對IOC/DI 的解藕看法為何? 為什麼要用到這個架構?   
+若兩個系統間，有資料交換的需求，你會怎麼去做ETL的架構?  
+如果要你執行一個特定經過機器學習的服務，你執行的步驟有哪些?  
+機器學習必須仰賴資料，大量資料在蒐集的時候，你會怎麼處理大數據的儲存?  
+LLM在企業導入，你覺得有那些應用可以做?  
+呈上題，你會怎麼做這個應用導入?  
+呈上題，你要怎麼訓練你的模型?  
+你會怎麼建立User interface,來讓使用者可以跟你的模型互動?  
