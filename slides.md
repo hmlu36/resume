@@ -1,4 +1,14 @@
 ---
+# title of your slide, will inferred from the first header if not specified
+title: Joshua Profile
+# titleTemplate for the webpage, `%s` will be replaced by the slides deck's title
+titleTemplate: '%s'
+# information for your slides, can be a Markdown string
+info: false
+author: Joshua Lu
+# ... 其他 slidev 設定 ...
+css:
+  - ./style/layout.css # 相對於 slides.md 的路徑
 # 封面頁設定，您可以指定一個背景圖片
 layout: cover
 style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
@@ -20,7 +30,7 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 </div>
 
 ---
-style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/computer-programmer.jpg); background-size: cover; background-position: center;"
+class: bg-styled-img-[/images/computer-programmer.jpg]
 ---
 
 # 👨‍💻 **Profile - 簡介**
@@ -34,7 +44,7 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 
 ---
 layout: default
-style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/education.jpg); background-size: cover; background-position: center;"
+class: bg-styled-img-[/images/education.jpg]
 ---
 
 <style>
@@ -75,7 +85,7 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 
 ---
 layout: default
-style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/workExperience.jpg); background-size: cover; background-position: center;"
+class: bg-styled-img-[/images/workExperience.jpg]
 ---
 
 # 💼 **Work Experience - 工作經歷**
@@ -126,7 +136,7 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 
 ---
 layout: default
-style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/skill.jpg); background-size: cover; background-position: center;"
+class: bg-styled-img-[/images/skill.jpg]
 ---
 
 # 🛠️ **Skill - 專業技能**
@@ -174,8 +184,7 @@ style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,
 
 ---
 layout: default
-class: text-center
-style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/certificate.jpg); background-size: cover; background-position: center;"
+class: bg-styled-img-[/images/certificate.jpg] text-center
 ---
 
 # 📜 **Certificate - 專業認證**  
@@ -233,7 +242,7 @@ layout: default
 
 ---
 layout: default
-style: "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/demo.jpg); background-size: cover; background-position: center;"
+class: bg-styled-img-[/images/demo.jpg]
 ---
 
 # 💡 **Side Project - 個人小專案**  
@@ -252,14 +261,40 @@ layout: default
 
 Q&A:   
 
-你在C#一個Web應用程式的後端開發，你會用甚麼樣的Design Pattern?  
-商業邏輯層與資料庫連結層你會怎麼分?  
-是否能獨力完成Web應用程式的CRUD?  
-你用甚麼方式連結關聯式資料庫? (以MS-SQL為例)  
-你用甚麼方式連結NoSQL資料庫? (以MongoDB為例)  
-在開發應用程式的時候，你會如何製作帳號驗證的架構? (必需要考慮整合第三方驗證。)  
-驗證與授權差異在哪裡?  
-Cookie 與   Token 的腳色分別為何?
+1. 你在C#一個Web應用程式的後端開發，你會用甚麼樣的Design Pattern?  
+    - MVC (Model-View-Controller)
+    - Dependency Injection 
+    - Singleton Pattern (全域設定、背景執行服務)
+    - Abstract Pattern (相同源頭，不同的子類別)
+    - Builder Pattern
+    - Decorator Pattern 
+2. 商業邏輯層與資料庫連結層你會怎麼分?  
+    - MVC (Model-View-Controller)
+    - 商業邏輯     放在 Service Layer 
+    - 資料庫連結層 放在 Repository 
+
+---
+layout: default
+---
+
+3. 是否能獨力完成Web應用程式的CRUD? 
+    - 使用Repository Pattern實作CRUD
+    - Controller再串接對應CRUD Service
+    - 資料驗證 (Data Validation)
+4. 你用甚麼方式連結關聯式資料庫? (以MS-SQL為例)  
+    - 使用Entity Framework，透過ORM方式串接資料庫
+    - 先寫class、屬性，再做migration (Code First)
+5. 你用甚麼方式連結NoSQL資料庫? (以MongoDB為例)  
+    - 使用 MongoClient 類別來建立與MongoDB伺服器的連線
+    - 資料庫建立對應POCO對應DB資料
+
+---
+layout: default
+---
+
+6. 在開發應用程式的時候，你會如何製作帳號驗證的架構? (必需要考慮整合第三方驗證。)  
+7. 驗證與授權差異在哪裡?  
+8. Cookie 與   Token 的腳色分別為何?
 你對IOC/DI 的解藕看法為何? 為什麼要用到這個架構?   
 若兩個系統間，有資料交換的需求，你會怎麼去做ETL的架構?  
 如果要你執行一個特定經過機器學習的服務，你執行的步驟有哪些?  
@@ -267,4 +302,4 @@ Cookie 與   Token 的腳色分別為何?
 LLM在企業導入，你覺得有那些應用可以做?  
 呈上題，你會怎麼做這個應用導入?  
 呈上題，你要怎麼訓練你的模型?  
-你會怎麼建立User interface,來讓使用者可以跟你的模型互動?  
+你會怎麼建立User interface,來讓使用者可以跟你的模型互動?
