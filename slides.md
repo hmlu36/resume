@@ -17,8 +17,8 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 <div class="flex items-center justify-center p-4 md:p-8 h-full"> <!-- 新增 h-full 使其填滿整個投影片高度 -->
   <div class="mr-6 md:mr-10 flex-shrink-0">
     <div class="p-2 bg-gradient-to-r from-gray-100 to-gray-500 rounded-full inline-block">
-    <!-- 確保圖片路徑正確，Slidev 中 public 資料夾下的資源可以直接用 /images/profile.png 引用 -->
-    <img src="/images/profile.png" alt="個人照片" class="w-32 md:w-40 h-auto rounded-full shadow-lg" /> <!-- 稍微調整 md 尺寸 -->
+    <!-- 確保圖片路徑正確，Slidev 中 public 資料夾下的資源可以直接用 /images/profile.webp 引用 -->
+    <img src="/images/profile.webp" alt="個人照片" class="w-32 md:w-40 h-auto rounded-full shadow-lg" /> <!-- 稍微調整 md 尺寸 -->
     </div>
       </div>
       <div class="text-left">
@@ -30,7 +30,7 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
 </div>
 
 ---
-class: bg-styled-img-[/images/computer-programmer.jpg]
+class: bg-styled-img-[/images/computer-programmer.webp]
 ---
 
 # 👨‍💻 **Profile - 簡介**
@@ -44,7 +44,7 @@ class: bg-styled-img-[/images/computer-programmer.jpg]
 
 ---
 layout: default
-class: bg-styled-img-[/images/education.jpg]
+class: bg-styled-img-[/images/education.webp]
 ---
 
 <style>
@@ -58,7 +58,7 @@ class: bg-styled-img-[/images/education.jpg]
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
   <div class="p-4 shadow-md text-center">
     <div style="display: flex; justify-content: center; align-items: center;">
-      <img src="/images/tku.jpg" alt="淡江大學校徽" class="h-24 w-24 object-contain mr-4 rounded-full"> 
+      <img src="/images/tku.webp" alt="淡江大學校徽" class="h-24 w-24 object-contain mr-4 rounded-full"> 
     </div>
     <br/>
     <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
@@ -71,7 +71,7 @@ class: bg-styled-img-[/images/education.jpg]
   <!-- 台灣科技大學 -->
   <div class="p-4 shadow-md text-center">
     <div style="display: flex; justify-content: center; align-items: center;">
-      <img src="/images/ntust.jpg" alt="台灣科技大學校徽" class="h-24 w-24 object-contain mr-4 rounded-full">
+      <img src="/images/ntust.webp" alt="台灣科技大學校徽" class="h-24 w-24 object-contain mr-4 rounded-full">
     </div>
     <br/>
     <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
@@ -85,7 +85,7 @@ class: bg-styled-img-[/images/education.jpg]
 
 ---
 layout: default
-class: bg-styled-img-[/images/workExperience.jpg]
+class: bg-styled-img-[/images/workExperience.webp]
 ---
 
 # 💼 **Work Experience - 工作經歷**
@@ -136,7 +136,7 @@ class: bg-styled-img-[/images/workExperience.jpg]
 
 ---
 layout: default
-class: bg-styled-img-[/images/skill.jpg]
+class: bg-styled-img-[/images/skill.webp]
 ---
 
 # 🛠️ **Skill - 專業技能**
@@ -184,7 +184,7 @@ class: bg-styled-img-[/images/skill.jpg]
 
 ---
 layout: default
-class: bg-styled-img-[/images/certificate.jpg] text-center
+class: bg-styled-img-[/images/certificate.webp] text-center
 ---
 
 # 📜 **Certificate - 專業認證**  
@@ -198,7 +198,7 @@ class: bg-styled-img-[/images/certificate.jpg] text-center
     <p class="font-semibold">Oracle Certified Professional</p>
     <p>Java SE 6 Programmer</p>
     <div style="display: flex; justify-content: center;">
-      <img src="/images/oracle.png" alt="Oracle Certification" style="width: 50px; height: auto;">
+      <img src="/images/oracle.webp" alt="Oracle Certification" style="width: 50px; height: auto;">
     </div>
   </div>
   <div class="p-4 border rounded-lg shadow-md">
@@ -206,7 +206,7 @@ class: bg-styled-img-[/images/certificate.jpg] text-center
     <p class="font-semibold">Microsoft MCP</p>
     <p>70-483 Programming in C#</p>
     <div style="display: flex; justify-content: center;">
-      <img src="/images/Programming+in+C_23-01.png" alt="Oracle Certification" class="w-12 h-auto mr-4"/>
+      <img src="/images/Programming+in+C_23-01.webp" alt="Oracle Certification" class="w-12 h-auto mr-4"/>
     </div>
   </div>
 </div>
@@ -242,7 +242,7 @@ layout: default
 
 ---
 layout: default
-class: bg-styled-img-[/images/demo.jpg]
+class: bg-styled-img-[/images/demo.webp]
 ---
 
 # 💡 **Side Project - 個人小專案**  
@@ -252,7 +252,7 @@ class: bg-styled-img-[/images/demo.jpg]
 
 [讀經小幫手](https://hmlu36.github.io/vite-bible/)    
 
-假日騎士LineBot ![](/images/bikeHelper.png)
+假日騎士LineBot ![](/images/bikeHelper.webp)
 
 
 ---
