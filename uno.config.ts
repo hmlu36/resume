@@ -9,7 +9,7 @@ export default defineConfig({
     [/^bg-styled-img-\[(.+)\]$/, ([, path]) => {
       const decodedPath = decodeURIComponent(path); // 解碼路徑，以防有 %20 等編碼
       return {
-        'background-image': `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${decodedPath}')`,
+        'background-image': `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${decodedPath}')`,
         'background-size': 'cover',
         'background-position': 'center',
         'background-repeat': 'no-repeat', // 通常會加上 no-repeat
