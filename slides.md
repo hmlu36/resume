@@ -25,7 +25,7 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
     <h1 class="text-4xl md:text-5xl font-bold">自我介紹</h1>
     <p class="text-4xl md:text-4xl mt-1 md:mt-2 font-bold">盧泓民 Joshua Lu</p>
     <!-- 建議在這裡加入應徵職位 -->
-    <p class="text-2xl md:text-3xl mt-2 text-gray-400">應徵職位： 資訊工程師</p>
+    <p class="text-2xl md:text-3xl mt-2 text-gray-400">應徵職位： 資訊應用開發工程師</p>
   </div>
 </div>
 
@@ -257,3 +257,123 @@ class: bg-styled-img-[/images/demo.webp]
   <img src="/images/bikeHelper2.webp" alt="Bike Helper 2" style="width: 35%; height: auto;" />
 </div>
 
+---
+layout: default
+class: bg-styled-img-[/images/q&a.webp]
+---
+
+# Q&A:  
+
+1. 你在C#一個Web應用程式的後端開發，你會用甚麼樣的Design Pattern?  
+    - MVC (Model-View-Controller)
+    - Dependency Injection (注入 Service、Repository、Logger 等)
+    - Singleton Pattern (全域設定、背景執行服務)
+    - Abstract Pattern (相同源頭，不同的子類別)
+    - Builder Pattern (隱藏複雜物件生成的步驟)
+
+2. 商業邏輯層與資料庫連結層你會怎麼分?  
+    - MVC (Model-View-Controller)
+    - 商業邏輯     放在 Service Layer
+    - 資料庫連結層 放在 Repository
+
+---
+layout: default
+class: bg-styled-img-[/images/q&a.webp]
+---
+
+3. 是否能獨力完成Web應用程式的CRUD?
+    - 使用Repository Pattern實作CRUD
+    - Controller再串接對應CRUD Service
+    - 資料驗證 (Data Validation)
+
+4. 你用甚麼方式連結關聯式資料庫? (以MS-SQL為例)  
+    - 使用Entity Framework，透過ORM方式串接資料庫
+    - 先寫class、屬性，再做migration (Code First)
+    - 舊專案透過ADO.NET連線(SqlConnection)
+
+5. 你用甚麼方式連結NoSQL資料庫? (以MongoDB為例)  
+    - 使用 MongoClient 類別來建立與MongoDB伺服器的連線
+    - 資料庫建立對應POCO對應NoSQL DB資料
+
+---
+layout: default
+class: bg-styled-img-[/images/q&a.webp]
+---
+
+6. 在開發應用程式的時候，你會如何製作帳號驗證的架構? (必需要考慮整合第三方驗證。)  
+    以Authenticator 為例  
+    - 註冊階段：
+      - 伺服器為每個使用者產生一組隨機密鑰（Secret Key）
+      - 產生 otpauth URI，並轉換為 QR Code，讓使用者用 Authenticator App 掃描綁定  
+    - 登入驗證階段：
+      - 使用者輸入帳號密碼通過第一階段驗證
+      - 系統要求輸入 Authenticator App 產生的 6 位數一次性密碼（OTP）
+      - 伺服器根據密鑰與當前時間計算 OTP，驗證使用者輸入是否正確
+      - 驗證通過後，完成登入
+
+7. 驗證與授權差異在哪裡?  
+  - 驗證（Authentication）: 驗證身分是否合法
+  - 授權（Authorization） : 驗證通過後，通常需要授權存取權
+
+---
+layout: default
+class: bg-styled-img-[/images/q&a.webp]
+---
+
+8. Cookie 與 Token 的角色分別為何?
+  Cookie:
+  - 有狀態（需伺服器保存 Session）
+  - 伺服器寫入瀏覽器的小型文字檔案，瀏覽器自動管理
+  Token:
+  - 本身攜帶驗證資訊，無狀態（伺服器不需保存 Session）
+  - 可設置有效期限、權限範圍，並可撤銷（revoke）
+
+9. 你對IOC/DI 的解藕看法為何? 為什麼要用到這個架構?  
+  - 降低類別或模組之間的耦合
+  - 提升可維護性與可擴充性
+  - 增強可測試性
+
+10. 若兩個系統間，有資料交換的需求，你會怎麼去做ETL的架構?  
+  - Extract: 從來源系統（如資料庫、API、檔案等）擷取所需資料
+  - Transform: 進行資料清理、格式轉換、欄位映射、資料驗證
+  - Load: 將轉換後的資料載入目標系統。需考慮效能、錯誤回報與資料備份
+
+11. 如果要你執行一個特定經過機器學習的服務，你執行的步驟有哪些?  
+  - 問題定義與確認
+  - 資料收集與清理
+  - 模型選擇與訓練
+  - 分析評估與優化
+  - 模型部署與調整
+  - 服務監控與維護
+
+12. 機器學習必須仰賴資料，大量資料在蒐集的時候，你會怎麼處理大數據的儲存?  
+  - 分散式儲存系統
+    透過將資料分散到多個節點進行儲存和處理，提供高擴展性與容錯能力，適合處理巨量資料，常見如 Hadoop Distributed File System（HDFS）、Google Cloud Storage、Amazon S3 等
+  - NoSQL 資料庫
+    如 MongoDB、Cassandra，適合儲存大規模非結構化或半結構化資料，支援高併發與彈性擴展
+
+13. LLM在企業導入，你覺得有那些應用可以做? 
+  - 智能客服與聊天機器人
+  LLM可用於打造智能客服系統或虛擬助手，能理解並即時回應複雜的客戶查詢，提升客戶滿意度並減少人力成本。例如，銀行、電商等行業已廣泛應用於自動回覆、常見問題解答與客戶諮詢
+  - 企業知識庫與內部搜尋
+  結合RAG（Retrieval-Augmented Generation）技術，LLM能整合企業內部大量文件、報告與手冊，讓員工以自然語言查詢並快速獲取所需資訊，提升知識管理效率 
+  - 辦公室流程自動化
+  LLM可自動生成會議記錄、報告摘要、郵件回覆等文檔，協助自動化日常辦公流程，減少重複性工作並提升整體生產力
+  - 內容生成與行銷文案
+  LLM能根據特定主題自動生成行銷文案、產品介紹、社群貼文等，為行銷團隊提供創意靈感並加速內容產出
+  - 程式碼生成與技術支援
+  工程團隊可利用LLM根據自然語言描述快速生成程式碼片段、函式或自動化測試腳本，提升開發效率並降低錯誤率
+  - 數據分析與決策支援
+  LLM可協助分析大量結構化與非結構化數據，提供洞察報告、預測分析與決策建議，強化企業在市場、營運、供應鏈等領域的競爭力
+  - 智能管理與流程優化
+  透過語言交互，LLM可協助企業優化管理決策、流程設計與跨部門協作，提升組織運作智慧化程度
+  - 產業專屬應用
+  如商品分類、法規文件解析、醫療紀錄摘要、金融風險評估等，LLM可根據產業需求進行微調，提供更精準的專業服務
+
+14. 呈上題，你會怎麼做這個應用導入?  
+  - 小規模試點與原型驗證
+  原型開發：選擇一至兩個具體場景（如智能客服、知識庫查詢），進行MVP（最小可行產品）開發與內部測試
+
+15. 呈上題，你要怎麼訓練你的模型?  
+
+16. 你會怎麼建立User interface,來讓使用者可以跟你的模型互動?
