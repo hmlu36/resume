@@ -25,7 +25,7 @@ style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
     <h1 class="text-4xl md:text-5xl font-bold">自我介紹</h1>
     <p class="text-4xl md:text-4xl mt-1 md:mt-2 font-bold">盧泓民 Joshua Lu</p>
     <!-- 建議在這裡加入應徵職位 -->
-    <p class="text-2xl md:text-3xl mt-2 text-gray-400">應徵職位： 資訊應用開發工程師</p>
+    <p class="text-2xl md:text-3xl mt-2 text-gray-400">應徵職位： 資訊工程師</p>
   </div>
 </div>
 
