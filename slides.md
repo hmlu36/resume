@@ -266,7 +266,7 @@ layout: two-cols
     - Abstract Pattern (相同源頭，不同的子類別)
     - Builder Pattern (隱藏複雜物件生成的步驟)
 
-2. **商業邏輯層與資料庫連結層你會怎麼分?**  
+2. **商業邏輯層與資料庫連結層你會怎麼分?**
     - MVC (Model-View-Controller)
     - 商業邏輯     放在 Service Layer
     - 資料庫連結層 放在 Repository
@@ -280,14 +280,14 @@ layout: two-cols
     - Controller再串接對應CRUD Service
     - 資料驗證 (更新、刪除)
 
-4. **你用甚麼方式連結關聯式資料庫? (以MS-SQL為例)**  
+4. **你用甚麼方式連結關聯式資料庫? (以MS-SQL為例)**
     - 新開發專案
       - 使用Entity Framework，透過ORM方式串接資料庫
       - 先寫class、屬性，再做migration (Code First)
     - 舊專案
       - 透過ADO.NET連線(SqlConnection)
 
-5. **你用甚麼方式連結NoSQL資料庫? (以MongoDB為例)**  
+5. **你用甚麼方式連結NoSQL資料庫? (以MongoDB為例)**
     - 使用 MongoClient 類別來建立與MongoDB伺服器的連線
     - 資料庫建立對應POCO對應NoSQL DB資料
 
@@ -295,8 +295,8 @@ layout: two-cols
 # class: bg-styled-img-[/images/q&a.webp]
 ---
 
-6. **在開發應用程式的時候，你會如何製作帳號驗證的架構? (必需要考慮整合第三方驗證。)**
-    以Authenticator 為例  
+6. **在開發應用程式的時候，你會如何製作帳號驗證的架構? (必需要考慮整合第三方驗證。)**  
+     以Authenticator 為例
     - 註冊階段：  
       - 伺服器為每個使用者產生一組隨機密鑰（Secret Key）  
       - 產生 otpauth URI，並轉換為 QR Code，讓使用者用 Authenticator App 掃描綁定   
@@ -306,7 +306,7 @@ layout: two-cols
       - 伺服器根據密鑰與當前時間計算 OTP，驗證使用者輸入是否正確  
       - 驗證通過後，完成登入
 
-7. **驗證與授權差異在哪裡?**  
+7. **驗證與授權差異在哪裡?**
     - 驗證（Authentication）: 驗證身分是否合法
     - 授權（Authorization） : 驗證通過後，是否有存取權限
 
@@ -322,7 +322,7 @@ layout: two-cols
         本身攜帶驗證資訊，無狀態（伺服器不需保存 Session）  
         可設置有效期限、權限範圍，並可撤銷（revoke）  
 
-9. **你對IOC/DI 的解藕看法為何? 為什麼要用到這個架構?**  
+9. **你對IOC/DI 的解藕看法為何? 為什麼要用到這個架構?**
     - 降低類別或模組之間的耦合
     - 提升可維護性與可擴充性
     - 增強可測試性
@@ -331,12 +331,12 @@ layout: two-cols
 # class: bg-styled-img-[/images/q&a.webp]
 ---
 
-10. **若兩個系統間，有資料交換的需求，你會怎麼去做ETL的架構?**  
+10. **若兩個系統間，有資料交換的需求，你會怎麼去做ETL的架構?**
     - Extract: 從來源系統（如資料庫、API、檔案等）擷取所需資料
     - Transform: 進行資料清理、格式轉換、欄位映射、資料驗證
     - Load: 將轉換後的資料載入目標系統。需考慮效能、錯誤回報與資料備份
     
-11. **如果要你執行一個特定經過機器學習的服務，你執行的步驟有哪些?**  
+11. **如果要你執行一個特定經過機器學習的服務，你執行的步驟有哪些?**
     - 問題定義與確認
     - 資料收集與清理
     - 模型選擇與訓練
@@ -348,7 +348,7 @@ layout: two-cols
 # class: bg-styled-img-[/images/q&a.webp]
 ---
 
-12. **機器學習必須仰賴資料，大量資料在蒐集的時候，你會怎麼處理大數據的儲存?**  
+12. **機器學習必須仰賴資料，大量資料在蒐集的時候，你會怎麼處理大數據的儲存?**
     - 分散式儲存系統  
         透過將資料分散到多個節點進行儲存和處理，提供高擴展性與容錯能力   
         常見如 Hadoop Distributed File System（HDFS）、Amazon S3 等   
@@ -360,7 +360,7 @@ layout: two-cols
 # class: bg-styled-img-[/images/q&a.webp]
 ---
 
-13. **LLM在企業導入，你覺得有那些應用可以做?** 
+13. **LLM在企業導入，你覺得有那些應用可以做?**
     - 智能客服與聊天機器人  
         打造智能客服系統或虛擬助手，能理解並即時回應複雜的客戶查詢，提升客戶滿意度並減少人力成本
     - 企業知識庫與內部搜尋  
@@ -378,7 +378,7 @@ layout: two-cols
 # class: bg-styled-img-[/images/q&a.webp]
 ---
 
-14. **呈上題，你會怎麼做這個應用導入?**  
+14. **呈上題，你會怎麼做這個應用導入?**
     - 明確需求與目標  
        釐清企業痛點與應用場景（如客服自動化、知識搜尋、文件生成等），設定可衡量的目標
     - 選擇合適的LLM方案  
@@ -394,7 +394,7 @@ layout: two-cols
 # class: bg-styled-img-[/images/q&a.webp]
 ---
 
-15. **呈上題，你要怎麼訓練你的模型?**  
+15. **呈上題，你要怎麼訓練你的模型?**
     - 數據收集與處理  
         收集大量高品質、具代表性的企業內部文本資料（如對話紀錄、文件、FAQ等）
         進行資料清理、去重、標註與分類，確保數據準確且無敏感資訊
