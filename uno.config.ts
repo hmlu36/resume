@@ -14,17 +14,4 @@ export default defineConfig({
       };
     }],
   ],
-  theme: {
-    colors: {
-      lightBg: '#f5f5f5',
-      lightText: '#333333',
-      primary: '#007bff',
-      secondary: '#6c757d',
-    },
-    extend: {
-      colors: {
-        coverText: '#333333',
-      }
-    }
-  },
 })
