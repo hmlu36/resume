@@ -2,18 +2,29 @@
 import { defineConfig } from 'unocss'
 
 export default defineConfig({
-  // ... 其他設定 ...
   rules: [
-    // 規則名稱可以自訂，例如 bg-styled-img-[圖片路徑]
-    // 路徑中的 / 會被 UnoCSS 自動處理，但如果路徑包含特殊字符，可能需要額外處理或編碼
+    // ... 其他規則 ...
     [/^bg-styled-img-\[(.+)\]$/, ([, path]) => {
-      const decodedPath = decodeURIComponent(path); // 解碼路徑，以防有 %20 等編碼
+      const decodedPath = decodeURIComponent(path);
       return {
-        'background-image': `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${decodedPath}')`,
+        'background-image': `linear-gradient(to bottom, rgba(240,240,240,0.8), rgba(240,240,240,0.8)), url('${decodedPath}')`, // 調整透明度更接近 1
         'background-size': 'cover',
         'background-position': 'center',
-        'background-repeat': 'no-repeat', // 通常會加上 no-repeat
+        'background-repeat': 'no-repeat',
       };
     }],
   ],
+  theme: {
+    colors: {
+      lightBg: '#f5f5f5',
+      lightText: '#333333',
+      primary: '#007bff',
+      secondary: '#6c757d',
+    },
+    extend: {
+      colors: {
+        coverText: '#333333',
+      }
+    }
+  },
 })

@@ -7,30 +7,37 @@ titleTemplate: '%s'
 info: false
 author: Joshua Lu
 # ... 其他 slidev 設定 ...
-css:
-  - ./style/layout.css # 相對於 slides.md 的路徑
 # 封面頁設定，您可以指定一個背景圖片
-layout: cover
-style: "background-image: linear-gradient(to bottom, #434343 0%, #000000 100%);"
+style: "background-color: #ffffff;"
+layout: two-cols
 ---
 
-<div class="flex items-center justify-center p-4 md:p-8 h-full"> <!-- 新增 h-full 使其填滿整個投影片高度 -->
+<div class="flex items-center justify-center p-4 md:p-8 h-full "> <!-- 新增 h-full 使其填滿整個投影片高度 -->
   <div class="mr-6 md:mr-10 flex-shrink-0">
     <div class="p-2 bg-gradient-to-r from-gray-100 to-gray-500 rounded-full inline-block">
     <!-- 確保圖片路徑正確，Slidev 中 public 資料夾下的資源可以直接用 /images/profile.webp 引用 -->
     <img src="/images/profile.webp" alt="個人照片" class="w-32 md:w-40 h-auto rounded-full shadow-lg" /> <!-- 稍微調整 md 尺寸 -->
     </div>
-      </div>
-      <div class="text-left">
-    <h1 class="text-4xl md:text-5xl font-bold">自我介紹</h1>
-    <p class="text-4xl md:text-4xl mt-1 md:mt-2 font-bold">盧泓民 Joshua Lu</p>
-    <!-- 建議在這裡加入應徵職位 -->
-    <p class="text-2xl md:text-3xl mt-2 text-gray-400">應徵職位： 資訊應用開發工程師</p>
   </div>
 </div>
 
+::right::
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+# **自我介紹**  
+  
+## **盧泓民 Joshua Lu**   
+  
+### **應徵職位： 資訊應用開發工程師**  
+
 ---
-class: bg-styled-img-[/images/computer-programmer.webp]
+# class: bg-styled-img-[/images/computer-programmer.webp]
 ---
 
 # 👨‍💻 **Profile - 簡介**
@@ -41,10 +48,8 @@ class: bg-styled-img-[/images/computer-programmer.webp]
 - # 注重 **團隊合作**與**高效溝通**
 - # 樂於 **學習**及**應用新技術**
 
-
 ---
-layout: default
-class: bg-styled-img-[/images/education.webp]
+# class: bg-styled-img-[/images/education.webp]
 ---
 
 <style>
@@ -64,7 +69,7 @@ class: bg-styled-img-[/images/education.webp]
     <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
       <h3 class="text-xl font-semibold">私立淡江大學</h3>
       <h4 class="text-xl font-semibold">電機系學士畢業</h4>
-      <p class="text-sm text-gray-400">2003/9 ~ 2008/6</p>
+      <p class="text-md ">2003/9 ~ 2008/6</p>
     </div>
   </div>
   
@@ -77,15 +82,14 @@ class: bg-styled-img-[/images/education.webp]
     <div class="flex-grow"> <!-- 文字內容區塊，會佔據可用空間 -->
       <h3 class="text-xl font-semibold">台灣科技大學</h3>
       <h4 class="text-xl font-semibold">電機所碩士畢業</h4>
-      <p class="text-sm text-gray-400">2008/9 ~ 2010/7</p>
+      <p class="text-md font-semibold">2008/9 ~ 2010/7</p>
     </div>
   </div>
 
 </div>
 
 ---
-layout: default
-class: bg-styled-img-[/images/workExperience.webp]
+# class: bg-styled-img-[/images/workExperience.webp] 
 ---
 
 # 💼 **Work Experience - 工作經歷**
@@ -135,8 +139,7 @@ class: bg-styled-img-[/images/workExperience.webp]
 </div>
 
 ---
-layout: default
-class: bg-styled-img-[/images/skill.webp]
+# class: bg-styled-img-[/images/skill.webp] 
 ---
 
 # 🛠️ **Skill - 專業技能**
@@ -183,8 +186,7 @@ class: bg-styled-img-[/images/skill.webp]
 </div>
 
 ---
-layout: default
-class: bg-styled-img-[/images/certificate.webp] text-center
+# class: bg-styled-img-[/images/certificate.webp] text-center 
 ---
 
 # 📜 **Certificate - 專業認證**  
@@ -211,8 +213,6 @@ class: bg-styled-img-[/images/certificate.webp] text-center
   </div>
 </div>
 
----
-layout: default
 ---
 
 # ✨ **Personality - 人格特質**
@@ -241,8 +241,7 @@ layout: default
 </div>
 
 ---
-layout: default
-class: bg-styled-img-[/images/demo.webp]
+# class: bg-styled-img-[/images/demo.webp] 
 ---
 
 # 💡 **Side Project - 個人專案**  
@@ -258,8 +257,7 @@ class: bg-styled-img-[/images/demo.webp]
 </div>
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp] 
 ---
 
 # Q&A:  
@@ -277,8 +275,7 @@ class: bg-styled-img-[/images/q&a.webp]
     - 資料庫連結層 放在 Repository
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp] 
 ---
 
 3. 是否能獨力完成Web應用程式的CRUD?
@@ -298,8 +295,7 @@ class: bg-styled-img-[/images/q&a.webp]
     - 資料庫建立對應POCO對應NoSQL DB資料
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 6. 在開發應用程式的時候，你會如何製作帳號驗證的架構? (必需要考慮整合第三方驗證。)  
@@ -318,8 +314,7 @@ class: bg-styled-img-[/images/q&a.webp]
     - 授權（Authorization） : 驗證通過後，是否有存取權限
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 8. Cookie 與 Token 的角色分別為何?
@@ -336,8 +331,7 @@ class: bg-styled-img-[/images/q&a.webp]
     - 增強可測試性
     
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 10. 若兩個系統間，有資料交換的需求，你會怎麼去做ETL的架構?  
@@ -354,8 +348,7 @@ class: bg-styled-img-[/images/q&a.webp]
     - 服務監控與維護
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 12. 機器學習必須仰賴資料，大量資料在蒐集的時候，你會怎麼處理大數據的儲存?  
@@ -367,8 +360,7 @@ class: bg-styled-img-[/images/q&a.webp]
         常見如 MongoDB、Cassandra 等  
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 13. LLM在企業導入，你覺得有那些應用可以做? 
@@ -386,8 +378,7 @@ class: bg-styled-img-[/images/q&a.webp]
         可協助分析大量結構化與非結構化數據，提供洞察報告、預測分析與決策建議
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 14. 呈上題，你會怎麼做這個應用導入?  
@@ -403,8 +394,7 @@ class: bg-styled-img-[/images/q&a.webp]
         收集用戶反饋，持續監控模型表現，定期更新資料與微調模型，確保應用長期穩定與精準
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 15. 呈上題，你要怎麼訓練你的模型?  
@@ -421,8 +411,7 @@ class: bg-styled-img-[/images/q&a.webp]
         將微調後的模型部署於企業內部或雲端，並建立監控與回饋機制，持續優化模型表現
 
 ---
-layout: default
-class: bg-styled-img-[/images/q&a.webp]
+# class: bg-styled-img-[/images/q&a.webp]
 ---
 
 16. 你會怎麼建立User interface,來讓使用者可以跟你的模型互動?
@@ -434,4 +423,3 @@ class: bg-styled-img-[/images/q&a.webp]
         按鈕、顏色、字型等設計風格要統一，讓使用者在不同頁面有一致的操作感受
     - 可擴展性  
         方便未來加入新功能（如多語言、檔案上傳、語音輸入等）
-
